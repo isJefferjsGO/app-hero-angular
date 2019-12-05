@@ -1,1 +1,74 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  padding-bottom: 50px;
+}
+
+.main-container {
+  margin-top: 20px;
+}
+
+/* Animations */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fast {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+/* Custom buttons */
+.btn--custom {
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 15px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  /* transition: none !important; */
+  width: calc(100% - 35px);
+  border-bottom-width: 7px !important;
+}
+
+.btn--custom:active {
+  transform: translate(0px, 5px);
+  /* box-shadow: 0px 0px 0px 0px !important; */
+  box-shadow: 0px 10px 12px -6px rgba(0,0,0,1) !important;;
+}
+
+.btn--blue {
+  border-color: #55acee !important;
+  box-shadow: 0px 20px 12px -10px rgba(0,0,0,0.3) !important;;
+  /* box-shadow: 0px 7px 0px 0px #3c93d5 !important; */
+}
+
+.btn--red {
+  border-color: #ee5555 !important;
+  box-shadow: 0px 20px 12px -10px rgba(0,0,0,0.3) !important;;
+  /* box-shadow: 0px 7px 0px 0px #3c93d5 !important; */
+}
+
+.btn--blue:hover {
+  background-color: #6fc5ff62;
+}
